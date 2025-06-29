@@ -8,6 +8,7 @@ import card from "@/assets/images/background/card.webp";
 import listGroup from "@/assets/images/background/list_group.svg";
 import badge from "@/assets/images/background/badge.svg";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router";
 
 
 const UiComponents = () => {
@@ -16,49 +17,49 @@ const UiComponents = () => {
       id : "1",
       title: "Timeline",
       img: timeline,
-      url:"/"
+      url:"https://drishya-ui.netlify.app/?path=/story/ui-timeline--advanced-timeline"
     },
     {
       id : "2",
       title: "Stepper",
       img: stepper,
-      url:"/"
+      url:"https://drishya-ui.netlify.app/?path=/story/ui-stepper--basic-stepper"
     },
     {
       id : "3",
       title: "Alert",
       img: alert,
-      url:"/"
+      url:"https://drishya-ui.netlify.app/?path=/story/ui-alert--advanced-alert"
     },
     {
       id : "4",
       title: "Progress",
       img: progress,
-      url:"/"
+      url:"https://drishya-ui.netlify.app/?path=/story/ui-progressbar--advanced-progress"
     },
     {
       id : "5",
       title: "Rating",
       img: rating,
-      url:"/"
+      url:"https://drishya-ui.netlify.app/?path=/story/ui-rating--advanced-rating"
     },
     {
       id : "6",
       title: "Card",
       img: card,
-      url:"/"
+      url:"https://drishya-ui.netlify.app/?path=/story/ui-card--baisc-card"
     },
     {
       id : "7",
       title: "List Group",
       img: listGroup,
-      url:"/"
+      url:"https://drishya-ui.netlify.app/?path=/story/ui-listgroup--basic-list-group"
     },
     {
       id : "7",
       title: "Badge",
       img: badge,
-      url:"/"
+      url:"https://drishya-ui.netlify.app/?path=/story/ui-badge--advanced-badge"
     },
   ]
   return (
@@ -80,7 +81,9 @@ const UiComponents = () => {
           }
          </div>
          <div className="flex items-center justify-center mt-6">
-            <Button>View All</Button>
+          <Link to="https://drishya-ui.netlify.app/" >
+          <Button>View All</Button>
+          </Link>
          </div>
        </div>
     </>

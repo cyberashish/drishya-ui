@@ -24,11 +24,11 @@ const Header = () => {
       <div className="flex items-center gap-6">
         <ul className="flex items-center gap-6">
           <li className="text-[15px] font-medium lg:block hidden" ><Link to="/" className="hover:text-primary" >Home</Link></li>
-          <li className="text-[15px] font-medium" ><Link to="/documentationd" className="hover:text-primary" >Components</Link></li>
-          <li><Link to="/documentationd" className="hover:text-primary" >
+          <li className="text-[15px] font-medium" ><Link to="https://drishya-ui.netlify.app/" className="hover:text-primary" >Components</Link></li>
+          <li><Link to="https://x.com/dev03ashish" className="hover:text-primary" >
           <Icon icon="prime:twitter" width={20} height={20} />
         </Link></li>
-        <li className="lg:block hidden" ><Link to="/documentationd" className="hover:text-primary" >
+        <li className="lg:block hidden" ><Link to="https://www.linkedin.com/in/cyberashish036/" className="hover:text-primary" >
           <Icon icon="ri:linkedin-fill" width={24} height={24} />
         </Link></li>
         </ul>

@@ -8,13 +8,14 @@ import drishyaEllipse1 from "@/assets/images/background/drishya_ellipse_1.svg";
 import drishyaEllipse2 from "@/assets/images/background/drishya_ellipse_2.svg";
 import drishyaEllipse3 from "@/assets/images/background/drishya_ellipse_3.svg";
 import UiComponents from "@/components/pages/home/UiComponents";
+import { Link } from "react-router";
 
 const Home = () => {
   return (
     <div className="container relative">
       <div className="flex items-center gap-10 justify-between relative lg:flex-nowrap flex-wrap">
         <div className="lg:w-6/12 w-full relative z-20">
-          <div className="flex flex-col gap-2.5">
+          <div className="flex flex-col gap-2.5 lg:pt-0 pt-10">
             <span className="px-4 py-1.5 w-fit rounded-full bg-primary/10 text-primary text-xs font-medium">
               Welcome to DrishyaUI
             </span>
@@ -28,10 +29,15 @@ const Home = () => {
                 Figma design system and more.
               </p>
               <div className="flex items-center gap-3">
-                <Button size="lg">Get Started</Button>
+              <Link to="https://www.npmjs.com/package/drishyaui" >
+              <Button size="lg">Get Started</Button>
+              </Link>
+                
+                <Link to="https://www.npmjs.com/package/drishyaui" >
                 <Button size="lg" variant="outline" className="font-normal">
                   npm i drishyaui
                 </Button>
+                </Link>
               </div>
             </div>
           </div>
