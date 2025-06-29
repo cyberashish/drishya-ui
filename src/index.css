@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: "Outfit", sans-serif; 
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-muted: var(--muted);
+}
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.2784 0.0273 257.53);
+  --primary: oklch(0.6042 0.1911 278.02);
+  --secondary: oklch(0.97 0 0);
+  --border: oklch(0.9203 0.015 260.73);
+  --input: oklch(0.9203 0.015 260.73);
+  --muted: oklch(0.5216 0.0471 260.8);
+}
+
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+  body{
+    @apply overflow-x-hidden;
+  }
+}
+@layer utilities{
+  .container{
+    @apply lg:max-w-[1420px] max-w-full px-6 mx-auto;
+  }
+}
+
+/* Custom css */
+.hero-setting{
+  animation: custom-rotate 3s linear infinite;
+}
+.looper-anime{
+  animation: custom-rotate 10s linear infinite;
+}
+
+@keyframes custom-rotate{
+  0%{
+   transform: rotate(0);
+  }100%{
+    transform: rotate(360deg);
+  }
+}
